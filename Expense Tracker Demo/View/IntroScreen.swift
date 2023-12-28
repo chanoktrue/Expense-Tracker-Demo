@@ -10,7 +10,7 @@ import SwiftUI
 struct IntroScreen: View {
   
     // Visibility Status
-    @AppStorage("isFirstTIme") private var isFirstTime: Bool = true
+    @AppStorage("isFirstTime") private var isFirstTime: Bool = true
     
     var body: some View {
         
@@ -36,7 +36,7 @@ struct IntroScreen: View {
             Button() {
                 isFirstTime = false
             } label: {
-                Text("Button")
+                Text("Continue")
                     .fontWeight(.bold)
                     .foregroundStyle(.white)
                     .frame(maxWidth: .infinity)
